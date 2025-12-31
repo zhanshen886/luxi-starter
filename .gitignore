@@ -4,6 +4,7 @@
 /node_modules
 /packages/**/node_modules
 /packages/**/.next
+/out
 
 # misc
 .DS_Store

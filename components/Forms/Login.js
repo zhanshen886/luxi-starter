@@ -48,8 +48,8 @@ function Login() {
   return (
     <AuthFrame title={t('login_title')} subtitle={t('login_subtitle')}>
       <div>
-        <div className={classes.head}>
-          <Title align="left">
+        <div className='flex items-center justify-between' >
+          <Title align="left" >
             {t('login')}
           </Title>
           <Button component={Link} size="small" className={classes.buttonLink} href={routeLink.starter.register}>
@@ -58,7 +58,7 @@ function Login() {
           </Button>
         </div>
         <SocialAuth />
-        <div className={classes.separator}>
+        <div className={classes.separator} >
           <Typography>
             {t('login_or')}
           </Typography>

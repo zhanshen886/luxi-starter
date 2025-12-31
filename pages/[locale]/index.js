@@ -20,7 +20,14 @@ import Subscribe from 'components/Subscribe';
 import Footer from 'components/Footer';
 import PageNav from 'components/PageNav';
 import Notification from 'components/Notification';
+import Login from 'components/Forms/Login';
+import Register from 'components/Forms/Register';
+import Table from 'components/Table';
 import brand from 'public/text/brand';
+// import DatePicker from 'components/DatePicker';
+
+
+
 
 const useStyles = makeStyles({ uniqId: 'home' })(theme => ({
   mainWrap: {
@@ -50,7 +57,7 @@ function Landing(props) {
         </title>
       </Head>
       <CssBaseline />
-      <section id="home" />
+      <section id="home"/>
       <MainContainer
         onToggleDark={onToggleDark}
         onToggleDir={onToggleDir}
@@ -59,7 +66,11 @@ function Landing(props) {
           <main className={classes.containerWrap}>
             <section>
               <Container fixed>
-                <AnimateSlider />
+                {/* <AnimateSlider /> */}
+                <Login/>
+                <Register/>
+                <Table />
+                {/* <DatePicker/> */}
               </Container>
             </section>
             <section className={cx(classes.spaceTop, classes.spaceBottom)} id="feature">

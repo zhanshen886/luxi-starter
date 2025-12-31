@@ -35,9 +35,17 @@ const featureStyles = makeStyles({ uniqId: 'feature' })((theme, _params, classes
     [`& .${classes.title}`]: {
       marginBottom: theme.spacing(3)
     },
-    [`& .${classes.text}`]: {
-      fontSize: 22
+    [`& .${classes.featureItem}`]: {
+      position: 'relative',
+      marginBottom: theme.spacing(20),
+      [`&.${classes.last}`]: {
+        marginBottom: 0,
+      },
+      [`& .${classes.text1}`]: {
+        fontSize: 22
+      },
     },
+
     [`& .${classes.img}`]: {
       position: 'relative',
       width: 400,
@@ -60,13 +68,7 @@ const featureStyles = makeStyles({ uniqId: 'feature' })((theme, _params, classes
       }
     },
   },
-  featureItem: {
-    position: 'relative',
-    marginBottom: theme.spacing(20),
-    [`&.${classes.last}`]: {
-      marginBottom: 0,
-    }
-  },
+
   deco1: {
     ...decoration(theme)
   },

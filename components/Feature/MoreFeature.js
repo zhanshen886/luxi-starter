@@ -20,7 +20,7 @@ function MainFeature() {
               </Typography>
             </ScrollAnimation>
             <ScrollAnimation animateOnce animateIn="fadeInLeft" delay={300} duration={0.6}>
-              <Typography variant="body1" className={classes.text}>
+              <Typography variant="body1" className={classes.text1}>
                 Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus.
               </Typography>
             </ScrollAnimation>
